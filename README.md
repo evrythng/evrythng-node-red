@@ -1,4 +1,4 @@
-evrythng-node-red
+EVRYTHNG-node-red
 =================
 
 Node-RED module to access the [https://dev.evrythng.com](EVRYTHNG API).
