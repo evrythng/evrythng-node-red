@@ -30,6 +30,15 @@
 
 <script type="text/x-red" data-help-name="evrythng">
     <p>A simple node that performs read or write requests on a Property of a Thng</p>
+    <p>You can send a payload including thng, key and value to update the property of an existing thng</p>
+    <p>The evential end point is created as : https://api.evrythng.com/thngs/<code>msg.payload.thng</code>/properties"</p>
+    <p>An the payload that is sent ends up in the format </p>
+    <pre>
+[{
+  "key" : <code>msg.payload.key</code>,
+  "value" : <code>msg.payload.value</code>
+}]
+    </pre>
 </script>
 
 <script type="text/javascript">
