@@ -19,5 +19,5 @@ sudo npm install -g node-red-contrib-evrythng
 
 # Usage
 
-You can send the Thng id, key and value in the payload to update values of properties.
+You can send the `Thng` id, `Property` key and value in the payload to read or update values of properties.
 
