@@ -4,7 +4,7 @@ EVRYTHNG Node-RED
 Node-RED module to access the EVRYTHNG API https://dashboard.evrythng.com
 # Install
 
-To install the module, you can either install it locally within your user data directory (by default, $HOME/.node-red):
+To install the module, you can either install it locally within your user data directory (by default, `$HOME/.node-red`):
 
 ```
 cd $HOME/.node-red
