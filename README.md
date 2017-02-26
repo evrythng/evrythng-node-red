@@ -20,8 +20,17 @@ sudo npm install -g node-red-contrib-evrythng
 
 # Usage
 
-You can send a payload to the node including Thng, key and value to update the Property of an existing Thng.
-Alternatively, you can set the Thng, key and value in the node configuration.
+You can send a payload to the node including Thng, key and value to update the Property of an existing Thng:
+
+```
+{
+  "key" : "temperature",
+  "value" : 10
+  "thng" : "76a267a7e4c3a4cfcca9b9ac"
+}
+```
+
+Alternatively, you can set the Thng, key and value in the node configuration
 The node sends a message to: `https://api.evrythng.com/thngs/<msg.payload.thng>/properties`
 And the payload that is sent ends up in the format:
 
