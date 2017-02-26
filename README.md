@@ -1,10 +1,11 @@
 EVRYTHNG Node-RED
 =================
 
-Node-RED module to access the EVRYTHNG API https://dashboard.evrythng.com
+A simple Node-RED node that performs read or write requests on a Property of a Thng with the [EVRYTHNG](https://developers.evrythng.com) IoT Platform (free developers accounts!).
+
 # Install
 
-To install the module, you can either install it locally within your user data directory (by default, `$HOME/.node-red`):
+To install the module, you can either install it locally within your node-RED user data directory (by default, `$HOME/.node-red`):
 
 ```
 cd $HOME/.node-red
@@ -19,5 +20,16 @@ sudo npm install -g node-red-contrib-evrythng
 
 # Usage
 
-You can send the `Thng` id, `Property` key and value in the payload to read or update values of properties.
+You can send a payload to the node including Thng, key and value to update the Property of an existing Thng.
+Alternatively, you can set the Thng, key and value in the node configuration.
+The node sends a message to: `https://api.evrythng.com/thngs/<msg.payload.thng>/properties`
+And the payload that is sent ends up in the format:
+
+```
+[{
+  "key" : <code>msg.payload.key</code>,
+  "value" : <code>msg.payload.value</code>
+}]
+```
+
 

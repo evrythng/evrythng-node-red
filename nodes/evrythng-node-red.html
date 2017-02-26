@@ -29,10 +29,12 @@
 </script>
 
 <script type="text/x-red" data-help-name="evrythng">
-    <p>A simple node that performs read or write requests on a Property of a Thng</p>
-    <p>You can send a payload including thng, key and value to update the property of an existing thng</p>
-    <p>The evential end point is created as : https://api.evrythng.com/thngs/<code>msg.payload.thng</code>/properties"</p>
-    <p>An the payload that is sent ends up in the format </p>
+    <p>A simple node that performs read or write requests on a Property of a Thng with the <a href="https://developers.evrythng.com">EVRYTHNG</a> IoT Platform.</p>
+    <p>You can send a payload to the node including Thng, key and value to update the Property of an existing Thng.</p>
+    <p>Alternatively, you can set the Thng, key and value in the node configuration.</p>
+    <p>The node sends a message to:</p>
+    <p>https://api.evrythng.com/thngs/<code>msg.payload.thng</code>/properties</p>
+    <p>And the payload that is sent ends up in the format:</p>
     <pre>
 [{
   "key" : <code>msg.payload.key</code>,
@@ -45,7 +47,7 @@
     RED.nodes.registerType('evrythng',{
         category: 'storage-input',
         color: '#FFFFFF',
-        icon: 'evrythngTiny.png',
+        icon: 'db.png',
         defaults: {
             name: {value:""},
             thng: {value:"",required:true},
@@ -56,7 +58,6 @@
         },
         inputs:1,
         outputs:1,
-        icon: "file.png",
         label: function() {
             return this.name||"EVRYTHNG";
         }

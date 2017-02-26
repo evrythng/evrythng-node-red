@@ -1,18 +1,19 @@
 {
-    "name"         : "node-red-contrib-evrythng",
-    "version"      : "0.0.1",
-    "description"  : "Node-RED module to access the EVRYTHNG API.",
-    "dependencies": {
-        "evrythng" : "2.x"
-    },
-    "repository" : {
-        "type":"git",
-        "url":"https://github.com/evrythng/evrythng-node-red"
-    },
-    "keywords": [ "node-red", "evrythng" ],
-    "node-red"     : {
-        "nodes": {
-            "evrythng": "nodes/evrythng-node-red.js"
-        }
+  "name"         : "node-red-contrib-evrythng",
+  "version"      : "0.1.0",
+  "description"  : "Node-RED module to access the EVRYTHNG API.",
+  "author": "Dominique Guinard, @domguinard",
+  "dependencies": {
+    "evrythng" : "2.x"
+  },
+  "repository" : {
+    "type": "git",
+    "url": "https://github.com/evrythng/evrythng-node-red"
+  },
+  "keywords": [ "node-red", "evrythng" ],
+  "node-red"     : {
+    "nodes": {
+      "evrythng": "nodes/evrythng-node-red.js"
     }
+  }
 }
